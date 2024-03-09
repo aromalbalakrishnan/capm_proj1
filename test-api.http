@@ -1,0 +1,40 @@
+### GET request
+http://localhost:4004/odata/v4/api/exports
+
+
+### GET single 
+http://localhost:4004/odata/v4/api/exports/6
+
+
+### create request
+POST http://localhost:4004/odata/v4/api/exports
+Content-Type: application/json
+
+{
+      "Id": 7,
+      "Company_Code": "IN97",
+      "Fiscal_Year": "2024",
+      "Document_Type": "FICA",
+      "Document_Number": "008300003358_0000001",
+      "Document_Line_Number": "6",
+      "Tax_Line_Number": "1",
+      "One_Source_Transaction_Type": "PS"  
+}
+
+###PUT request
+PUT http://localhost:4004/odata/v4/api/exports/6
+Content-Type: application/json
+
+{
+    "Id": 5,
+    "Company_Code": "IN97",
+    "Fiscal_Year": "2024",
+    "Document_Type": "FICA",
+    "Document_Number": "008300003358_0000001",
+    "Document_Line_Number": "6",
+    "Tax_Line_Number": "1",
+    "One_Source_Transaction_Type": "6S"  
+}
+
+###DELETE request
+DELETE  http://localhost:4004/odata/v4/api/exports/6
